@@ -13,7 +13,7 @@ ActiveRecord::Base.connection.reset_pk_sequence!('attendances')
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     description: Faker::Quotes::Shakespeare.hamlet_quote,
-    email: Faker::Internet.email,
+    email: ["margaux@yopmail.com","chaix@yopmail.com","fra@yopmail.com","gilo@yopmail.com","caro@yopmail.com"].sample,
     encrypted_password: '123456')
 end
   
