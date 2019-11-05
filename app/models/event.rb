@@ -8,7 +8,7 @@ class Event < ApplicationRecord
   validates :duration, presence: true,
     numericality: { greater_than: 0, only_integer: true } 
     #if: :multipe_of_5?
-  validates :title, presence: true, 
+  validates :title, presence: true,
     length: { in: 5..140 }
   validates :description, presence: true, 
     length: { in: 20..1000 }
